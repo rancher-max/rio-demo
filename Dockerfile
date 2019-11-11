@@ -8,4 +8,4 @@ WORKDIR /go/src/github.com/rancher/other
 RUN ["go", "build", "-o", "other"]
 WORKDIR /go/src/github.com/rancher/demo
 RUN ["go", "build", "-o", "demo"]
-CMD ["./other"]
+ENTRYPOINT ["./other"]
