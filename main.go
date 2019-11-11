@@ -10,8 +10,8 @@ import (
 func handler(w http.ResponseWriter, r *http.Request) {
 	// Arbitrary sleep so that we can demonstrate autoscaler
 	log.Println("Basic logging -- request received")
-	time.Sleep(1001 * time.Millisecond)
-	fmt.Fprintln(w, "Hi there, I'm running in Rio:rancher-max:2")
+	time.Sleep(501 * time.Millisecond)
+	fmt.Fprintln(w, "Hi there, I'm running in Rio:rancher-max:33")
 }
 
 func main() {
