@@ -28,7 +28,7 @@ func handler(w http.ResponseWriter, r *http.Request) {
 
 func main() {
 	go func() {
-		http.HandleFunc("/", fooHandler)
+		http.HandleFunc("/foo", fooHandler)
 		log.Fatal(http.ListenAndServe(":8001", nil))
 	}()
 
@@ -38,6 +38,6 @@ func main() {
 	}()
 
 	//the last call is outside goroutine to avoid that program just exit
-	http.HandleFunc("/", barHandler)
+	http.HandleFunc("/bar", barHandler)
 	log.Fatal(http.ListenAndServe(":8002", nil))
 }
