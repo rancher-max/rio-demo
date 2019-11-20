@@ -28,17 +28,17 @@ func main() {
 }
 
 func foo8001(w http.ResponseWriter, r *http.Request) {
-	fmt.Println("Listening on 8001: foo ")
+	fmt.Fprintln(w, "Listening on 8001: foo ")
 }
 
 func bar8001(w http.ResponseWriter, r *http.Request) {
-	fmt.Println("Listening on 8001: bar ")
+	fmt.Fprintln(w, "Listening on 8001: bar ")
 }
 
 func foo8002(w http.ResponseWriter, r *http.Request) {
-	fmt.Println("Listening on 8002: foo ")
+	fmt.Fprintln(w, "Listening on 8002: foo ")
 }
 
 func bar8002(w http.ResponseWriter, r *http.Request) {
-	fmt.Println("Listening on 8002: bar ")
+	fmt.Fprintln(w, "Listening on 8002: bar ")
 }
