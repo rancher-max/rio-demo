@@ -38,6 +38,6 @@ func main() {
 	}()
 
 	//the last call is outside goroutine to avoid that program just exit
-	http.HandleFunc("/", fooHandler)
+	http.HandleFunc("/", barHandler)
 	log.Fatal(http.ListenAndServe(":8002", nil))
 }
