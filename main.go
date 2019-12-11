@@ -11,7 +11,7 @@ func handler(w http.ResponseWriter, r *http.Request) {
 	// Arbitrary sleep so that we can demonstrate autoscaler
 	log.Println("Basic logging -- request received")
 	time.Sleep(101 * time.Millisecond)
-	fmt.Fprintln(w, "Max rio demo: v1")
+	fmt.Fprintln(w, "Max rio demo v2")
 }
 
 func main() {
