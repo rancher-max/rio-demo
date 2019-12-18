@@ -11,7 +11,7 @@ func handler(w http.ResponseWriter, r *http.Request) {
 	// Arbitrary sleep so that we can demonstrate autoscaler
 	log.Println("Basic logging -- request received")
 	time.Sleep(101 * time.Millisecond)
-	fmt.Fprintln(w, "I'm being updated for a tag")
+	fmt.Fprintln(w, "Let's start with v")
 }
 
 func main() {
