@@ -2,9 +2,9 @@ stages:
 - name: deploy catalog
   steps:
   - applyAppConfig:
-      catalogTemplate: cattle-global-data:helm2-chartmuseum
+      catalogTemplate: cattle-global-data:helm3-big-chartmuseum
       version: 2.8.0
-      name: pipeline-argo-test
+      name: pipeline-argo-test-helm3
       targetNamespace: default
 timeout: 60
 notification: {}
