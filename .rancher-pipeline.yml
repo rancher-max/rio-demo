@@ -5,5 +5,10 @@ stages:
       dockerfilePath: ./Dockerfile
       buildContext: .
       tag: maxross/rio-demo:testing
+  - applyAppConfig:
+      catalogTemplate: cattle-global-data:library-chartmuseum
+      version: 2.3.1
+      name: pipeline-deploy
+      targetNamespace: default
 timeout: 60
 notification: {}
