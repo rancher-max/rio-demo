@@ -2,7 +2,7 @@ stages:
 - name: deploy catalog
   steps:
   - applyAppConfig:
-      catalogTemplate: cattle-global-data:helm3-argo
+      catalogTemplate: p-j5rl7:helm3-argo
       version: 0.7.0
       name: pipeline-argo
       targetNamespace: default
