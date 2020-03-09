@@ -1,0 +1,9 @@
+stages:
+- name: Compile
+  steps:
+  - publishImageConfig:
+      dockerfilePath: ./Dockerfile
+      buildContext: .
+      tag: maxross/rio-demo:testing
+timeout: 60
+notification: {}
