@@ -1,0 +1,10 @@
+stages:
+- name: deploy catalog
+  steps:
+  - applyAppConfig:
+      catalogTemplate: p-4vtd2:helm3-argo
+      version: 0.7.0
+      name: pipeline-argo
+      targetNamespace: default
+timeout: 60
+notification: {}
