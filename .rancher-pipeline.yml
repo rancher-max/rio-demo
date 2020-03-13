@@ -3,7 +3,7 @@ stages:
   steps:
   - applyAppConfig:
       catalogTemplate: cattle-global-data:helm3-argo
-      version: 0.7.1
+      version: 0.7.2
       name: pipeline-argo-test-helm3
       targetNamespace: default
 timeout: 60
